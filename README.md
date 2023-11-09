@@ -6,7 +6,8 @@ Esta es una aplicación web sencilla que expone dos servicios, uno para crear us
 
 Asegúrate de tener instalado lo siguiente:
 - Docker
-- Java   
+- Java
+- Gradlew
 
 ## Ejecución
 
