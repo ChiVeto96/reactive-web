@@ -8,4 +8,8 @@ public interface UserService {
 
   Mono<UserDto> create(Mono<UserDto> userDto);
   Flux<UserDto> getUsers();
+
+  Mono<UserDto> findEmail(String email);
+
+
 }

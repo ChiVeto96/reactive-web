@@ -23,6 +23,11 @@ public class UserServiceImpl implements UserService {
   }
 
   @Override
+  public Mono<UserDto> findEmail(String email) {
+    return userRepository.findByEmail(email).map(Utility::entityToDto);
+  }
+
+  @Override
   public Mono<UserDto> create(Mono<UserDto> userDto) {
     return userDto.map(Utility::dtoToEntity)
             .flatMap(userRepository::insert)
