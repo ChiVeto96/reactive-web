@@ -52,6 +52,12 @@ Puedes extraer la data completa mediante una solicitud GET a la siguiente URL:
 ```bash
 curl --location 'localhost:8080/api/user'
 ```
+
+Consultar por email
+```bash
+curl --location 'localhost:8080/api/user/find?email=jero%40gmail.com'
+```
+
 ### 5. URL SWAGGER
 ```bash
 http://localhost:8080/webjars/swagger-ui/index.html#/user-controller/create
